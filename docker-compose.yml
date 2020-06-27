@@ -1,0 +1,21 @@
+version: "3"
+services:
+  influxdb:
+    build:
+      context: ./influxdb
+    ports:
+      - "8086:8086"
+    volumes:
+      - influxdb:/var/lib/influxdb
+  grafana:
+    build:
+      context: ./grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana:/var/lib/grafana
+
+volumes:
+  influxdb:
+  grafana:
+
