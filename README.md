@@ -1,4 +1,4 @@
-# rpi-docker
+# TIG Stack on RaspberryPi with docker-compose
 Telegraf, InfluxDB, Grafana stack running on a Raspberry Pi 4 using Docker
 ----
 Install `docker-compose` from `https://docs.docker.com/compose/install/`
